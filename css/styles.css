@@ -1,8 +1,8 @@
 :root {
-    --primary-text-color:#757575;
-    --title-text-color:#212121;
-    --accent-color:#2196f3;
-    --white-color:#ffffff;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
 }
 
 p,
@@ -54,7 +54,6 @@ a {
     align-items: center;
 }
 
-.bonner-address,
 .bonner-list {
     display: flex;
     align-items: center;
@@ -64,8 +63,6 @@ a {
 
 .bonner {
     border-bottom: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logo-link {
@@ -82,8 +79,9 @@ a {
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19px;  
+    line-height: 1.19px;
 }
+
 .bonner-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -91,8 +89,15 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .bonner .gap {
     column-gap: 50px;
+}
+
+.gap .item .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .bonner-list .link {
@@ -105,11 +110,9 @@ a {
 
 .primary {
     background-color: #2F303A;
-}
-
-.primary-container {
     padding: 200px 0;
 }
+
 .primary .title {
     color: var(--white-color);
     font-weight: 900;
@@ -141,15 +144,17 @@ a {
 
 .primary .btn:hover,
 .primary .btn:focus {
-    background-color: #188CE8; 
+    background-color: #188CE8;
 }
 
 .feature {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.feature .container .list{
+
+.feature .container .list {
     display: flex;
+    gap: 30px;
 }
 
 .feature .title {
@@ -180,6 +185,7 @@ a {
 .work {
     padding-bottom: 94px;
 }
+
 .work .item {
     width: calc((100%-60px)/3);
 }
@@ -203,6 +209,7 @@ a {
     display: flex;
     column-gap: 30px;
 }
+
 .team .subtitle {
     color: var(--title-text-color);
     font-weight: 500;
@@ -215,22 +222,21 @@ a {
     font-size: 16px;
     line-height: 1.18;
 }
+
 .container-wrap {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    border: 1px solid #EEEEEE;
-    border-top: transparent;
     background-color: var(--white-color);
-    max-width: 270px
 }
 
 .blosc {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .blosc .btn {
-    background-color:#F5F4FA;
+    background-color: #F5F4FA;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -239,11 +245,11 @@ a {
     border: transparent;
     padding: 6px 22px;
 }
-.portfolio-text {
+
+.blosc-text {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: transparent;
-    max-width: 370px
 }
 
 .aside-list .small-title {
@@ -253,6 +259,7 @@ a {
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .small-title {
     margin-bottom: 4px;
 }
@@ -273,11 +280,11 @@ a {
     margin-bottom: 20px;
 }
 
-.blosc .container .list {
+.blosc-list {
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
 
 }
 
@@ -287,35 +294,48 @@ a {
     font-size: 14px;
     line-height: 1.7;
 }
+
 .aside-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-    
 .fon {
-    background-color:#2F303A ;
+    background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.fon-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-color);
+}
+
 .box .link {
-    color:rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     display: block;
+}
+
+.box .list {
     margin-top: 9px;
-    margin-bottom: 9px;
+}
+
+.item-box {
+    margin-top: 9px;
 }
 
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
-    color:var(--white-color);
+    color: var(--white-color);
     cursor: pointer;
 }
+
 .link:hover,
 .link:focus {
     color: var(--accent-color);
@@ -328,4 +348,17 @@ a {
 
 .link.current {
     color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
