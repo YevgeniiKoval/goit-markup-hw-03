@@ -1,8 +1,8 @@
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --white-color: #ffffff;
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196f3;
+    --white-color:#ffffff;
 }
 
 p,
@@ -79,9 +79,8 @@ a {
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19px;
+    line-height: 1.19px;  
 }
-
 .bonner-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -89,7 +88,6 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 .bonner .gap {
     column-gap: 50px;
 }
@@ -144,17 +142,23 @@ a {
 
 .primary .btn:hover,
 .primary .btn:focus {
-    background-color: #188CE8;
+    background-color: #188CE8; 
 }
 
 .feature {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
-
-.feature .container .list {
+.feature .container .list{
     display: flex;
     gap: 30px;
+
+}
+
+.feature .container  .item {
+width: 270px;
+    
 }
 
 .feature .title {
@@ -185,7 +189,6 @@ a {
 .work {
     padding-bottom: 94px;
 }
-
 .work .item {
     width: calc((100%-60px)/3);
 }
@@ -209,7 +212,6 @@ a {
     display: flex;
     column-gap: 30px;
 }
-
 .team .subtitle {
     color: var(--title-text-color);
     font-weight: 500;
@@ -222,7 +224,6 @@ a {
     font-size: 16px;
     line-height: 1.18;
 }
-
 .container-wrap {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -234,9 +235,8 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 .blosc .btn {
-    background-color: #F5F4FA;
+    background-color:#F5F4FA;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -245,7 +245,6 @@ a {
     border: transparent;
     padding: 6px 22px;
 }
-
 .blosc-text {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
@@ -259,7 +258,6 @@ a {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-
 .small-title {
     margin-bottom: 4px;
 }
@@ -284,7 +282,7 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 
 }
 
@@ -294,15 +292,14 @@ a {
     font-size: 14px;
     line-height: 1.7;
 }
-
 .aside-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-
+    
 .fon {
-    background-color: #2F303A;
+    background-color:#2F303A ;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -314,28 +311,24 @@ a {
 }
 
 .box .link {
-    color: rgba(255, 255, 255, 0.6);
+    color:rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     display: block;
 }
-
 .box .list {
     margin-top: 9px;
 }
-
 .item-box {
     margin-top: 9px;
 }
-
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
-    color: var(--white-color);
+    color:var(--white-color);
     cursor: pointer;
 }
-
 .link:hover,
 .link:focus {
     color: var(--accent-color);
